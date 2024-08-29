@@ -1,0 +1,47 @@
+.stick_follow_icon {
+    height: 200px;
+    left: 30px;
+    margin-top: -100px;
+    position: fixed;
+    top: 50%;
+    width: 20px;
+}
+
+.stick_follow_icon ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.stick_follow_icon ul li {
+    display: block;
+    font-size: 2rem;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    transition: all .3s;
+}
+
+.stick_follow_icon p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 20px;
+    left: -24px;
+    line-height: 1.2;
+    position: relative;
+    top: 70px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    width: 68px;
+}
+
+.stick_follow_icon .icon img, .stick_follow_icon .icon svg {
+    width: 100%;
+    height: 100%;
+    /* filter: invert(100%); */
+    /* color: black; */
+}
+
+.stick_follow_icon .icon:hover{
+    transform: scale(1.2);
+}
