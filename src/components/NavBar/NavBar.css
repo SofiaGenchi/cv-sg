@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Importa la fuente moderna */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #121212;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: 'Robot', sans-serif;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link {
+    color: #e0e0e0; 
+    /* color de texto gris oscuro */
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link:hover{
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+/* ajuste para pantallas celular tablet */
+@media (max-width: 780px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .right{
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .link{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
