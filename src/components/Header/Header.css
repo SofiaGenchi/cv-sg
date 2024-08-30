@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15vh 20vh;
+    box-sizing: border-box;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-left {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-left p {
+    /* margin: 5px 0 0; */
+    font-size: 16px;
+    /* text-align: start; */
+}
+
+/* .header-right {
+    display:  flex;
+    align-items: center;
+} */
+
+/* .logo{
+    height: 50px;
+    width: auto;
+} */
+
+/* src/Header.css */
+.header-left h1 {
+    letter-spacing: 12px;
+    font-size: 4.5rem; /* Tamaño de fuente más grande para un efecto más impactante */
+    font-weight: 700; /* Negrita para un texto más prominente */
+    background: linear-gradient(90deg, #ffffff, #cccccc); /* Gradiente de blanco a gris claro */
+    -webkit-background-clip: text; /* Aplica el gradiente solo al texto */
+    -webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el gradiente */
+    animation: gradientShift 5s ease infinite, textGlow 1.5s ease-in-out infinite; /* Animaciones combinadas */
+  }
+  
+  /* Animación de gradiente de color */
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  /* Animación de brillo sutil */
+  @keyframes textGlow {
+    0%, 100% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+  }
+  
