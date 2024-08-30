@@ -1,0 +1,122 @@
+.portfolio {
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio h2 {
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.portfolio-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.portfolio-image:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay p {
+    margin: 10px 0;
+}
+
+.github-link,
+.website-link {
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.github-link:hover {
+    background: #333;
+}
+
+.website-link:hover {
+    background: #333;
+}
+
+/* media querys */
+/* Para pantallas más pequeñas que 1024px (tablets en orientación horizontal y pantallas de laptops) */
+@media (max-width: 1024px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas en lugar de tres */
+    }
+  }
+  
+  /* Para pantallas más pequeñas que 768px (tablets en orientación vertical y pantallas de móviles grandes) */
+  @media (max-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr; /* Una sola columna */
+    }
+    
+    .portfolio-item {
+      width: 100%; /* Ocupa el ancho completo del contenedor */
+      height: auto; /* Altura automática para mantener la proporción de la imagen */
+    }
+  
+    .portfolio-overlay p {
+      font-size: 14px; /* Ajusta el tamaño del texto */
+    }
+  
+    .github-link, .website-link {
+      font-size: 20px; /* Ajusta el tamaño del ícono */
+    }
+  }
+  
+  /* Para pantallas más pequeñas que 480px (teléfonos móviles pequeños) */
+  @media (max-width: 480px) {
+    .portfolio-overlay p {
+      font-size: 12px; /* Ajusta aún más el tamaño del texto */
+    }
+  
+    .github-link, .website-link {
+      font-size: 18px; /* Ajusta aún más el tamaño del ícono */
+      padding: 4px 8px; /* Ajusta el padding */
+    }
+  }
+  
