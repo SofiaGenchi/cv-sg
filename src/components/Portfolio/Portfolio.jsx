@@ -4,30 +4,30 @@ import './Portfolio.css'
 const projects = [
     {
       id: 1,
-      title: 'Project One',
+      title: 'Estudio Inmobiliario',
       description: 'A brief description of project one.',
-      technologies: 'HTML, CSS, JavaScript',
-      github: 'https://github.com/yourusername/project-one',
-      website: 'https://project-one.com',
-      imageUrl: 'https://via.placeholder.com/300'
+      technologies: 'ReactJS, CSS, Javascript, HTML',
+      github: 'https://github.com/SofiaGenchi/mc-estudio-inmobiliario',
+      website: 'https://www.mariainesestudioinmobiliario.com.ar',
+      imageUrl: 'src/assets/img/img1.png'
     },
     {
       id: 2,
-      title: 'Project Two',
+      title: 'Adidas',
       description: 'A brief description of project two.',
-      technologies: 'React, Node.js',
-      github: 'https://github.com/yourusername/project-two',
-      website: 'https://project-two.com',
-      imageUrl: 'https://via.placeholder.com/300'
+      technologies: 'HTML5, SASS, React, Bootstrap, Firebase, React-Router-Dom, SweetAlert',
+      github: 'https://github.com/SofiaGenchi/adidas',
+      website: 'https://adidas-zeta.vercel.app/category/camisetas',
+      imageUrl: 'src/assets/img/img2.png'
     },
     {
       id: 3,
-      title: 'Project Three',
+      title: 'Generador de QR',
       description: 'A brief description of project three.',
-      technologies: 'MySQL, Express',
-      github: 'https://github.com/yourusername/project-three',
-      website: 'https://project-three.com',
-      imageUrl: 'https://via.placeholder.com/300'
+      technologies: 'HTML, CSS, Javascript',
+      github: 'https://github.com/SofiaGenchi/QRcode',
+      website: 'https://sofiagenchi.github.io/QRcode/',
+      imageUrl: 'src/assets/img/img3.png'
     },
     {
       id: 1,
