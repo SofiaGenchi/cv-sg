@@ -1,0 +1,12 @@
+import React from 'react'
+import './Cv.css'
+
+const Cv = () => {
+  return (
+    <div id='cv'>
+       <a className='button' href="src\assets\curriculum\cvsofiagenchidev.html" target='_blank' rel="noopener noreferrer">CURRICULUM VITAE</a>
+    </div>
+  )
+}
+
+export default Cv

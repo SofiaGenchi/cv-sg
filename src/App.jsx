@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar'
 import Portfolio from './components/Portfolio/Portfolio'
 import SocialMedia from './components/SocialMedia/SocialMedia'
 import About from './components/About/About';
+import Cv from './components/CV/Cv';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<Header />} />
           <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/about' element={<About />}/>
+          <Route path='/cv' element={<Cv />}/>
         </Routes>
       </div>
     </Router>

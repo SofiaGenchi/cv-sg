@@ -1,0 +1,61 @@
+#cv {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra verticalmente en la pantalla */
+  height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
+  width: 70vw;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+}
+
+/* Archivo CSS: styles.css */
+
+/* Estilo para el botón */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el botón en hover */
+.button:hover {
+  background-color: #ff7b00;
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el botón en foco (cuando se hace clic) */
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Media Query para pantallas de tablets en orientación vertical (768px y menos) */
+@media (max-width: 768px) {
+    .button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Media Query para pantallas de teléfonos móviles en orientación vertical (480px y menos) */
+  @media (max-width: 480px) {
+    .button {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+  

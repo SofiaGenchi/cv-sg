@@ -84,3 +84,59 @@
     text-shadow: 0 0 12px rgba(255, 255, 255, 0.5), 0 0 24px rgba(255, 255, 255, 0.3);
   }
 }
+
+
+
+/* Media Query para pantallas de tablets (768px y menos) */
+@media (max-width: 768px) {
+  .header {
+    height: auto; /* Ajusta la altura del encabezado para que se adapte al contenido */
+    padding: 60px 20px; /* Aumenta el padding para un espaciado adecuado en pantallas más pequeñas */
+  }
+
+  .header-content {
+    flex-direction: column; /* Apila el contenido verticalmente */
+    text-align: center;
+    padding: 0; /* Elimina el padding interno adicional */
+  }
+
+  .header-left {
+    max-width: 90%; /* Reduce el ancho máximo para adaptarse a pantallas más pequeñas */
+  }
+
+  .header-left h1 {
+    font-size: 3.5rem; /* Tamaño de fuente más adecuado para tablets */
+    letter-spacing: 2px; /* Ajuste fino del espaciado de letras */
+  }
+
+  .header-left p {
+    font-size: 1rem; /* Tamaño de fuente moderado para el párrafo */
+    margin-top: 15px; /* Margen superior para separar el párrafo del título */
+  }
+}
+
+/* Media Query para pantallas de teléfonos móviles (480px y menos) */
+@media (max-width: 480px) {
+  .header {
+    height: auto; /* Ajusta la altura del encabezado */
+    padding: 40px 15px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .header-content {
+    padding: 0; /* Elimina el padding interno adicional */
+  }
+
+  .header-left {
+    max-width: 100%; /* Asegura que el contenido use el ancho completo del contenedor */
+  }
+
+  .header-left h1 {
+    font-size: 2.5rem; /* Tamaño de fuente adecuado para móviles */
+    letter-spacing: 1.5px; /* Ajuste del espaciado de letras */
+  }
+
+  .header-left p {
+    font-size: 0.7rem; /* Tamaño de fuente reducido para el párrafo */
+    margin-top: 10px; /* Margen superior para separar el párrafo del título */
+  }
+}
