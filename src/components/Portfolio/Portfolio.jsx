@@ -5,7 +5,6 @@ const projects = [
     {
       id: 1,
       title: 'Estudio Inmobiliario',
-      // description: 'A brief description of project one.',
       technologies: 'ReactJS, CSS, Javascript, HTML',
       github: 'https://github.com/SofiaGenchi/mc-estudio-inmobiliario',
       website: 'https://www.mariainesestudioinmobiliario.com.ar',
@@ -14,7 +13,6 @@ const projects = [
     {
       id: 2,
       title: 'Adidas',
-      // description: 'A brief description of project two.',
       technologies: 'HTML5, SASS, React, Bootstrap, Firebase, React-Router-Dom, SweetAlert',
       github: 'https://github.com/SofiaGenchi/adidas',
       website: 'https://adidas-zeta.vercel.app/category/camisetas',
@@ -23,7 +21,6 @@ const projects = [
     {
       id: 3,
       title: 'Generador de QR',
-      // description: 'A brief description of project three.',
       technologies: 'HTML, CSS, Javascript',
       github: 'https://github.com/SofiaGenchi/QRcode',
       website: 'https://sofiagenchi.github.io/QRcode/',
@@ -32,7 +29,6 @@ const projects = [
     {
       id: 4,
       title: 'Gradient Color Generator',
-      // description: 'A brief description of project one.',
       technologies: 'HTML, CSS, JavaScript',
       github: 'https://github.com/SofiaGenchi/Gradient-Color-Generator',
       website: 'https://gradient-color-generator-seven.vercel.app/',
@@ -41,7 +37,6 @@ const projects = [
     {
       id: 5,
       title: 'AI Image Generator',
-      // description: 'A brief description of project two.',
       technologies: 'HTML, CSS, Javascript, AI ChatGPT API',
       github: 'https://github.com/SofiaGenchi/AI-Image-Generation',
       website: 'https://ai-image-generation-rho.vercel.app/',
@@ -50,7 +45,6 @@ const projects = [
     {
       id: 6,
       title: 'Calculador de propina',
-      // description: 'A brief description of project three.',
       technologies: 'MySQL, Express',
       github: 'https://github.com/SofiaGenchi/tip-calculator',
       website: 'https://sofiagenchi.github.io/tip-calculator/',

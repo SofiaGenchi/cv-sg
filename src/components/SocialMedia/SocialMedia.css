@@ -38,8 +38,6 @@
 .stick_follow_icon .icon img, .stick_follow_icon .icon svg {
     width: 100%;
     height: 100%;
-    /* filter: invert(100%); */
-    /* color: black; */
 }
 
 .stick_follow_icon .icon:hover{

@@ -60,7 +60,7 @@ const About = () => {
       {/* Sección de introducción */}
       <div className="about-intro">
         <img
-          src="src/assets/img/img7.jpg" // Reemplaza con la ruta de tu imagen
+          src="src/assets/img/img7.jpg"
           alt="About Me"
           className="about-image"
         />

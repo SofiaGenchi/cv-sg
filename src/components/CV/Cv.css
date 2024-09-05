@@ -1,15 +1,13 @@
 #cv {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra verticalmente en la pantalla */
+  justify-content: center;
   height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
   width: 70vw;
   margin: 0 auto;
   padding: 20px;
-  box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+  box-sizing: border-box;
 }
-
-/* Archivo CSS: styles.css */
 
 /* Estilo para el botón */
 .button {
