@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 0 20px;
 }
 
 /* Sección de introducción centrada */
@@ -13,27 +14,33 @@
   height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
   padding: 20px;
   box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+  /* background-color: #f9f9f9f1; */
 }
 
 .about-image {
-  width: auto; /* Ajusta el tamaño según sea necesario */
+  width: 300px; /* Ajusta el tamaño según sea necesario */
   height: auto;
-  border-radius: 8px; /* Opcional, para bordes redondeados */
-  margin-right: 20px; /* Espacio entre la imagen y el texto */
+  border-radius: 10px; /* Opcional, para bordes redondeados */
+  margin-right: 30px; /* Espacio entre la imagen y el texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-text {
-  max-width: 600px; /* Limita el ancho del texto */
+  max-width: 700px; /* Limita el ancho del texto */
   text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .about-text h2 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: white;
 }
 
 .about-text p {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #838383;
+  margin: 0;
 }
 
 /* Estilos para la sección de certificaciones y conocimientos */
@@ -67,6 +74,12 @@
   box-sizing: border-box; /* Incluye padding y borde en el ancho total */
 }
 
+.certification-item:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
 .certification-text {
   flex: 1; /* Ocupa el espacio disponible a la izquierda */
   text-align: left; /* Alinea el texto a la izquierda */
@@ -83,7 +96,7 @@
 
 .certification-image {
   width: 300px;
-  height: 300px;
+  height: auto;
   border: 2px solid #333; /* Ajusta el color y el grosor del borde según sea necesario */
   border-radius: 8px; /* Bordes redondeados */
   object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
