@@ -1,0 +1,171 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Sección de introducción centrada */
+.about-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra verticalmente en la pantalla */
+  height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
+  padding: 20px;
+  box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+}
+
+.about-image {
+  width: auto; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  border-radius: 8px; /* Opcional, para bordes redondeados */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.about-text {
+  max-width: 600px; /* Limita el ancho del texto */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.about-text h2 {
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilos para la sección de certificaciones y conocimientos */
+.about-certifications {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-certifications h3 {
+  margin-bottom: 20px;
+}
+
+.certifications-grid {
+  display: flex;
+  flex-direction: column; /* Muestra cada tarjeta en una fila */
+  gap: 20px; /* Espacio entre las tarjetas */
+  width: 100%;
+  max-width: 800px; /* Limita el ancho máximo para centrar las tarjetas */
+}
+
+.certification-item {
+  display: flex;
+  align-items: center; /* Alinea la imagen y el texto verticalmente */
+  gap: 20px; /* Espacio entre la imagen y el texto */
+  padding: 20px;
+  border: 1px solid #ddd; /* Borde alrededor de cada tarjeta */
+  border-radius: 8px; /* Bordes redondeados */
+  width: 100%;
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+.certification-text {
+  flex: 1; /* Ocupa el espacio disponible a la izquierda */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.certification-text h4 {
+  margin-bottom: 10px;
+}
+
+.certification-text p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.certification-image {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #333; /* Ajusta el color y el grosor del borde según sea necesario */
+  border-radius: 8px; /* Bordes redondeados */
+  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+  transition: opacity 0.3s ease; /* Transición suave para el efecto de hover */
+}
+
+.certification-image:hover {
+  opacity: 0.7; /* Cambia la opacidad al pasar el mouse */
+}
+
+/* Media Queries para pantallas de tabletas (max-width: 768px) */
+@media (max-width: 768px) {
+  .about-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 120px; /* Ajusta el tamaño de la imagen */
+    margin: 0 0 20px 0; /* Ajusta el espaciado */
+  }
+
+  .about-text {
+    max-width: 90%;
+    font-size: 16px; /* Asegura que el texto sea legible */
+  }
+
+  .certifications-grid {
+    max-width: 100%;
+  }
+
+  .certification-item {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 15px; /* Espacio entre imagen y texto */
+  }
+
+  .certification-image {
+    max-width: 100%; /* Ajusta la imagen a 100% del contenedor */
+    height: auto;
+  }
+
+  .certification-text {
+    text-align: center;
+  }
+}
+
+/* Media Queries para teléfonos móviles (max-width: 480px) */
+@media (max-width: 480px) {
+  .about-intro {
+    padding: 15px; /* Asegura que el padding no sea demasiado pequeño */
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .about-text {
+    max-width: 100%; /* Asegura que el texto no quede recortado */
+    font-size: 14px; /* Ajusta el tamaño de la fuente para una mejor legibilidad */
+  }
+
+  .certifications-grid {
+    width: 100%; /* Asegura que la cuadrícula ocupe todo el ancho del contenedor */
+    padding: 0; /* Elimina el padding para aprovechar el espacio */
+  }
+
+  .certification-item {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px; /* Reduce el espacio entre imagen y texto */
+  }
+
+  .certification-image {
+    max-width: 100%; /* Ajusta la imagen a 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-width: 1px; /* Ajusta el grosor del borde */
+  }
+
+  .certification-text {
+    text-align: center;
+  }
+}
