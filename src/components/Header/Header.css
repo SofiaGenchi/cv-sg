@@ -1,140 +1,115 @@
-/* Estilo general del encabezado */
 .header {
+  height: 90vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ocupa toda la altura de la vista */
+  align-items:center;
   margin: 0; /* Elimina cualquier margen por defecto */
   padding: 0; /* Elimina el padding por defecto */
-  position: relative;
   overflow: hidden; /* Oculta las animaciones fuera del área visible */
-  background: linear-gradient(-45deg, #000000, #1c1c1c, #000000, #1c1c1c);
-  background-size: 400% 400%;
-  animation: gradientShift 25s ease infinite;
 }
 
-/* Efecto de luz sutil sobre el fondo */
-.header::before {
-  content: '';
+
+/* From Uiverse.io by jeremyssocial */ 
+@keyframes blinkCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typeAndDelete {
+  0%,
+  10% {
+    width: 0;
+  }
+  45%,
+  55% {
+    width: 13em;
+  } /* adjust width based on content */
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+.terminal-loader {
+  border: 0.1em solid #333;
+  background-color: #1a1a1a;
+  color: #0f0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 1.5em 1em;
+  width: 500px;
+  margin: 100px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.terminal-header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.5));
-  pointer-events: none;
-  z-index: 0;
+  right: 0;
+  height: 1.5em;
+  background-color: #333;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 0 0.4em;
+  box-sizing: border-box;
 }
 
-/* Contenido del encabezado */
-.header-content {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  z-index: 1;
+.terminal-controls {
+  float: right;
 }
 
-/* Estilo del contenido del encabezado */
-.header-left {
-  max-width: 80%;
-  color: #ffffff;
+.control {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  margin-left: 0.4em;
+  border-radius: 50%;
+  background-color: #777;
 }
 
-.header-left h1 {
-  letter-spacing: 4px;
-  font-size: 5.5rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #ffffff, #e0e0e0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textGlow 2s ease-in-out infinite;
+.control.close {
+  background-color: #e33;
 }
 
-.header-left p {
-  font-size: 1.1rem;
-  margin-top: 10px;
-  color: #d0d0d0;
+.control.minimize {
+  background-color: #ee0;
 }
 
-/* Animación de gradiente de color */
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
+.control.maximize {
+  background-color: #0b0;
 }
 
-/* Animación de brillo sutil */
-@keyframes textGlow {
-  0%, 100% {
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
-  }
-  50% {
-    text-shadow: 0 0 12px rgba(255, 255, 255, 0.5), 0 0 24px rgba(255, 255, 255, 0.3);
-  }
+.terminal-title {
+  float: left;
+  line-height: 1.5em;
+  color: #eee;
 }
 
+.text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.2em solid green; /* Cursor */
+  animation: typeAndDelete 4s steps(11) infinite,
+    blinkCursor 0.5s step-end infinite alternate;
+  margin-top: 1.5em;
+}
 
-
-/* Media Query para pantallas de tablets (768px y menos) */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header {
-    height: auto;
-    padding: 60px 20px;
+    padding: 1em; /* Ajusta el padding para pantallas móviles */
   }
 
-  .header-content {
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-  }
-
-  .header-left {
-    max-width: 90%;
-  }
-
-  .header-left h1 {
-    font-size: 3.5rem;
-    letter-spacing: 2px;
-  }
-
-  .header-left p {
-    font-size: 1rem;
-    margin-top: 15px;
-  }
-}
-
-/* Media Query para pantallas de teléfonos móviles (480px y menos) */
-@media (max-width: 480px) {
-  .header {
-    height: auto;
-    padding: 40px 15px;
-  }
-
-  .header-content {
-    padding: 0;
-  }
-
-  .header-left {
-    max-width: 100%;
-  }
-
-  .header-left h1 {
-    font-size: 2.5rem;
-    letter-spacing: 1.5px;
-  }
-
-  .header-left p {
-    font-size: 0.7rem; 
-    margin-top: 10px;
+  .terminal-loader {
+    width: 90vw; /* Usa un porcentaje del ancho de la ventana */
+    max-width: 400px; /* Limita el ancho máximo */
+    font-size: 1em; /* Ajusta el tamaño de la fuente */
   }
 }
