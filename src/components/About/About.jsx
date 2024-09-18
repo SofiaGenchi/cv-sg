@@ -67,7 +67,6 @@ const certifications = [
 const About = () => {
   return (
     <div className="about">
-      {/* Sección de introducción */}
       <div className="about-intro">
         <img
           src={img7}
@@ -79,8 +78,6 @@ const About = () => {
           <p>I'm actively seeking new opportunities. With a strong background in customer service and administration, I am also a certified ReactJS Frontend Developer. My freelance projects include work for real estate and cleaning companies. <br />I'm proficient in customer support, scheduling, tax payments, and advanced computer tools (PC, email, Microsoft Word, Excel). My web development skills cover CSS, HTML, SASS, SEO, JavaScript, Bootstrap, ReactJS, Firebase, MySQL, UML, and Java. <br />I'm a team player who loves learning and am available to start immediately, preferably in the mornings. I'm currently pursuing a Higher Technical Degree in Software Development.</p>
         </div>
       </div>
-
-      {/* Sección de certificaciones y conocimientos */}
       <div className="about-certifications">
         <h3>Certifications and Skills</h3>
         <div className="certifications-grid">
