@@ -2,6 +2,7 @@ import React from "react";
 import "./SocialMedia.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 function SocialMedia() {
     return (
@@ -13,6 +14,9 @@ function SocialMedia() {
                 <li>
                     <a href="https://www.linkedin.com/in/sofiagenchi"
                         target="_blank"><FaLinkedin /></a>
+                </li>
+                <li>
+                    <a href="https://github.com/SofiaGenchi" target="_blank"><FaGithub /></a>
                 </li>
             </ul>
             <p>Follow Me</p>

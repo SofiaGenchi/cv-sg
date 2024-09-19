@@ -4,7 +4,7 @@ import './Cv.css'
 const Cv = () => {
   return (
     <div id='cv'>
-       <a className='button' href="/cvsofiagenchidev.html" target='_blank' rel="noopener noreferrer">CURRICULUM VITAE</a>
+       <a className='animate__animated animate__zoomIn button' href="/cvsofiagenchidev.html" target='_blank' rel="noopener noreferrer">CURRICULUM VITAE</a>
     </div>
   )
 }

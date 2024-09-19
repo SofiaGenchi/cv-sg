@@ -67,7 +67,7 @@ const certifications = [
 const About = () => {
   return (
     <div className="about">
-      <div className="about-intro">
+      <div className="animate__animated animate__backInRight about-intro">
         <img
           src={img7}
           alt="About Me"
@@ -75,7 +75,7 @@ const About = () => {
         />
         <div className="about-text">
           <h2>Sofia Ailen Genchi</h2>
-          <p>I'm actively seeking new opportunities. With a strong background in customer service and administration, I am also a certified ReactJS Frontend Developer. My freelance projects include work for real estate and cleaning companies. <br />I'm proficient in customer support, scheduling, tax payments, and advanced computer tools (PC, email, Microsoft Word, Excel). My web development skills cover CSS, HTML, SASS, SEO, JavaScript, Bootstrap, ReactJS, Firebase, MySQL, UML, and Java. <br />I'm a team player who loves learning and am available to start immediately, preferably in the mornings. I'm currently pursuing a Higher Technical Degree in Software Development.</p>
+          <p>I am a certified ReactJS Frontend Developer actively seeking new opportunities. I have completed freelance projects for real estate and cleaning companies.<br />I possess skills in customer support, scheduling, and advanced computer tools, as well as web development technologies including CSS, HTML, SASS, JavaScript, Bootstrap, ReactJS, Firebase, and MySQL.<br />Currently pursuing a Higher Technical Degree in Software Development; I thrive in collaborative environments and am available to start immediately.</p>
         </div>
       </div>
       <div className="about-certifications">

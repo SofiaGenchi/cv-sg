@@ -1,18 +1,9 @@
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  /* padding: 0 20px; */
-}
-
 /* Sección de introducción centrada */
 .about-intro {
   display: flex;
   align-items: center;
   justify-content: center; /* Centra verticalmente en la pantalla */
   height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
-  box-sizing: border-box;
 }
 
 .about-image {
@@ -28,19 +19,24 @@
 }
 
 .about-text h2 {
-  font-size: 55px;
+  font-size: 60px;
   color: white;
   padding: 0;
   margin: 0;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Sombra más pronunciada */
+  font-weight: bold;
+  text-align: center;
 }
 
 .about-text p {
-  font-size: 22px;
-  font-weight: 700;
-  text-align: justify;
-  line-height: 1.6;
-  color: white;
-  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    max-width: 650px; /* Ancho máximo del párrafo */
+    margin: 20px auto; /* Centrado en la página */
+    text-align: justify;
 }
 
 /* Estilos para la sección de certificaciones y conocimientos */
@@ -53,7 +49,9 @@
 
 .about-certifications h3 {
   margin-bottom: 20px;
-  font-size: 50px;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Sombra más pronunciada */
+  font-weight: bold;
+  font-size: 60px;
   padding: 30px;
 }
 
@@ -110,78 +108,72 @@
   opacity: 0.7;
 }
 
-/* Media Queries para pantallas de tabletas (max-width: 768px) */
+
+/* Estilos para tabletas */
 @media (max-width: 768px) {
   .about-intro {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* Cambia a columna */
+    height: auto; /* Permite altura automática */
+    padding: 20px; /* Agrega espacio */
   }
 
   .about-image {
-    max-width: 120px; /* Ajusta el tamaño de la imagen */
-    margin: 0 0 20px 0; /* Ajusta el espaciado */
+    width: 60%; /* Ajusta la imagen al 100% */
+    margin: 0 0 20px 0; /* Espacio debajo de la imagen */
   }
 
   .about-text {
-    max-width: 90%;
-    font-size: 16px; /* Asegura que el texto sea legible */
+    max-width: 600px;
+  }
+
+  .about-text h2 {
+    font-size: 40px; /* Reduce el tamaño del título */
+    text-align: center; /* Centra el título */
+  }
+
+  .about-text p {
+    font-size: 18px; /* Reduce el tamaño del párrafo */
+    padding: 10px; /* Reduce el padding */
+  }
+
+  .about-certifications h3 {
+    font-size: 36px; /* Reduce el tamaño del título de certificaciones */
+    padding: 20px; /* Ajusta el padding */
   }
 
   .certifications-grid {
-    max-width: 100%;
+    width: 70%; /* Asegura que las tarjetas ocupen el 100% */
   }
 
   .certification-item {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    gap: 15px;
+    flex-direction: column; /* Cambia a columna en los ítems */
+    align-items: flex-start; /* Alinea al inicio */
+    padding: 15px; /* Ajusta el padding */
   }
 
   .certification-image {
-    max-width: 100%; /* Ajusta la imagen a 100% del contenedor */
-    height: auto;
-  }
-
-  .certification-text {
-    text-align: center;
+    width: 100%; /* Ajusta la imagen al 100% */
   }
 }
 
-/* Media Queries para teléfonos móviles (max-width: 480px) */
+/* Estilos para teléfonos móviles */
 @media (max-width: 480px) {
-  .about-intro {
-    padding: 15px;
-  }
-
-  .about-image {
-    display: none;
-  }
-
   .about-text {
-    max-width: 100%;
-    font-size: 14px;
+    max-width: 290px;
+  }
+  .about-text h2 {
+    font-size: 28px; /* Reduce aún más el tamaño del título */
   }
 
-  .certifications-grid {
-    width: 100%;
-    padding: 0;
+  .about-text p {
+    font-size: 16px; /* Reduce el tamaño del párrafo */
   }
 
-  .certification-item {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
+  .about-certifications h3 {
+    font-size: 28px; /* Reduce el tamaño del título de certificaciones */
   }
 
-  .certification-image {
-    max-width: 100%;
-    height: auto;
-    border-width: 1px;
-  }
-
-  .certification-text {
-    text-align: center;
+  .certification-text p {
+    font-size: 12px; /* Reduce el tamaño del texto de certificación */
   }
 }

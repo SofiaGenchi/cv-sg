@@ -9,10 +9,11 @@
 }
 
 .portfolio h2 {
-    color: white;
-    font-size: 6rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, color 0.3s ease;
+  color: white;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Sombra más pronunciada */
+  font-weight: bold;
+  font-size: 100px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .portfolio-grid {
@@ -33,27 +34,26 @@
 
 .github-link,
 .website-link {
-    margin: 5px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 30px;
-    border: 1px solid #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-    background-color: black;
+  margin: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  background-color: black;
 }
 
 .github-link:hover {
-    background: grey;
+  background: grey;
 }
 
 .website-link:hover {
   background: grey;
-
 }
 
-/* From Uiverse.io by gharsh11032000 */ 
+/* From Uiverse.io by gharsh11032000 */
 .card {
   position: relative;
   width: 600px;

@@ -10,6 +10,11 @@ import img3 from "../../assets/img/img3.png";
 import img4 from "../../assets/img/img4.png";
 import img5 from "../../assets/img/img5.png";
 import img6 from "../../assets/img/img6.png";
+import img7 from "../../assets/img/img8.png";
+import img8 from "../../assets/img/img9.png";
+import img9 from "../../assets/img/img10.png";
+import img10 from "../../assets/img/img11.png";
+
 
 
 
@@ -25,8 +30,7 @@ const projects = [
   {
     id: 2,
     title: "Adidas",
-    technologies:
-      "HTML5, SASS, React, Bootstrap, Firebase, React-Router-Dom, SweetAlert",
+    technologies: "HTML5, SASS, React, Bootstrap, Firebase, React-Router-Dom, SweetAlert",
     github: "https://github.com/SofiaGenchi/adidas",
     website: "https://adidas-zeta.vercel.app/category/camisetas",
     imageUrl: img2,
@@ -58,11 +62,43 @@ const projects = [
   {
     id: 6,
     title: "Calculador de propina",
-    technologies: "MySQL, Express",
+    technologies: "HTML, CSS, Javascript",
     github: "https://github.com/SofiaGenchi/tip-calculator",
     website: "https://sofiagenchi.github.io/tip-calculator/",
     imageUrl: img6,
   },
+  {
+    id: 7,
+    title: "Magnifico de La Limpieza",
+    technologies: "HTML, CSS, Bootstrap",
+    github: "#",
+    website: "https://magnificodelalimpieza.com.ar",
+    imageUrl: img7,
+  },
+  {
+    id: 8,
+    title: "Consultor del Clima",
+    technologies: "HTML, CSS, Javascript, Fetch API, WeatherAPI",
+    github: "https://github.com/SofiaGenchi/clima-app",
+    website: "https://clima-app-mocha.vercel.app",
+    imageUrl: img8,
+  },
+  {
+    id: 9,
+    title: "Biovida - Tienda de alimentos saludables",
+    technologies: "HTML, CSS, SASS, Javascript",
+    github: "https://github.com/SofiaGenchi/BioVida-Genchi",
+    website: "https://sofiagenchi.github.io/BioVida-Genchi",
+    imageUrl: img9,
+  },
+  {
+    id: 10,
+    title: "Gradient-Color-Generator",
+    technologies: "HTML, CSS, Javascript",
+    github: "https://github.com/SofiaGenchi/Gradient-Color-Generator",
+    website: "https://gradient-color-generator-seven.vercel.app/",
+    imageUrl: img10,
+  }
 ];
 
 const Portfolio = () => {
